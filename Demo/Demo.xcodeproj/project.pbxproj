@@ -133,10 +133,10 @@
 			children = (
 				19FFC2D918943205000FBC09 /* DKAppDelegate.h */,
 				19FFC2DA18943205000FBC09 /* DKAppDelegate.m */,
-				19FFC2DC18943205000FBC09 /* Images.xcassets */,
-				19FFC2D118943205000FBC09 /* Supporting Files */,
 				19FFC2FD1894324D000FBC09 /* DKDemoViewController.h */,
 				19FFC2FE1894324D000FBC09 /* DKDemoViewController.m */,
+				19FFC2DC18943205000FBC09 /* Images.xcassets */,
+				19FFC2D118943205000FBC09 /* Supporting Files */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
