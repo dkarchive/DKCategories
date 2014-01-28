@@ -24,7 +24,7 @@
         // NSNumber
         NSLog(@"- NSNumber Categories");
         
-        NSLog(@"dk_displayWithComma: %@", [@3000 dk_stringWithDecimal]);
+        NSLog(@"dk_stringWithDecimal: %@", [@3000 dk_stringWithDecimal]);
         
         // NSString
         NSLog(@"- NSString Categories");
