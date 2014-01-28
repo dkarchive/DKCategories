@@ -33,9 +33,14 @@
 
     XCTAssertTrue([[@"item" dk_pluralize:3] isEqualToString:@"items"], @"");
     XCTAssertTrue([[@"item" dk_pluralize:1] isEqualToString:@"item"], @"");
+    XCTAssertTrue([[@"item" dk_pluralize:-1] isEqualToString:@"error"], @"");
+    XCTAssertTrue([[@"item" dk_pluralize:0] isEqualToString:@"items"], @"");
 
+    
     XCTAssertTrue([[NSString dk_pluralizePerson:3] isEqualToString:@"3 people"], @"");
     XCTAssertTrue([[NSString dk_pluralizePerson:1] isEqualToString:@"1 person"], @"");
+    XCTAssertTrue([[NSString dk_pluralizePerson:-1] isEqualToString:@"error"], @"");
+    XCTAssertTrue([[NSString dk_pluralizePerson:0] isEqualToString:@"no one"], @"");
 }
 
 @end

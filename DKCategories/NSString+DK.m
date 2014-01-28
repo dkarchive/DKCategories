@@ -18,6 +18,9 @@
     if (number==1)
         return self;
     
+    if (number<0)
+        return @"error";
+    
     return [self stringByAppendingString:@"s"];
 }
 
@@ -25,6 +28,12 @@
 + (NSString *)dk_pluralizePerson:(NSInteger)numberOfPeople {
     if (numberOfPeople==1)
         return @"1 person";
+    
+    if (numberOfPeople==0)
+        return @"no one";
+    
+    if (numberOfPeople<0)
+        return @"error";
     
     return [NSString stringWithFormat:@"%d people", numberOfPeople ];
 }
