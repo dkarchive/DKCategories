@@ -17,6 +17,7 @@
 
 
 - (void)dk_addBorderWithColor:(UIColor*)color width:(CGFloat)width {
+    NSAssert(width>0, @"dk_addBorderWithColor width should be positive");
     self.layer.borderColor = color.CGColor;
     self.layer.borderWidth = width;
 }
@@ -28,6 +29,8 @@
 
 
 - (void)dk_addBottomBorderWithColor:(UIColor *)color width:(CGFloat)width {
+    NSAssert(width>0, @"dk_addBottomBorderWithColor width should be positive");
+    
     CGRect frame = self.bounds;
     frame.origin.y = frame.size.height;
     frame.size.height = width;
@@ -52,6 +55,7 @@
 
 
 - (void)dk_fadeInWithAlpha:(CGFloat)alpha duration:(CGFloat)duration {
+    NSAssert(alpha>0, @"dk_fadeInWithAlpha alpha should be positive");
     self.alpha=0.0f;
     [UIView animateWithDuration:duration delay:0.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.alpha = alpha;
