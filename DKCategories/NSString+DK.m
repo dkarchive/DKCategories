@@ -39,4 +39,31 @@
 }
 
 
+- (NSString*)dk_truncateToWidth:(CGFloat)width withFont:(UIFont*)font {
+    int min = 0, max = self.length, mid;
+    while (min < max) {
+        mid = (min+max)/2;
+        NSString *currentString = [self substringWithRange:NSMakeRange(0, mid)];
+        CGSize currentSize = [currentString sizeWithFont:font];
+        
+        if (currentSize.width < width){
+            min = mid + 1;
+        }
+        else if (currentSize.width > width) {
+            max = mid - 1;
+        }
+        else {
+            min = mid;
+            break;
+        }
+    }
+    
+    NSString *retVal = [self substringWithRange:NSMakeRange(0, min)];
+    if (min<self.length) {
+        retVal = [retVal stringByAppendingString:@"…"];
+    }
+    return  retVal;
+}
+
+
 @end

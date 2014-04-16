@@ -41,6 +41,8 @@
     XCTAssertTrue([[NSString dk_pluralizePerson:1] isEqualToString:@"1 person"], @"");
     XCTAssertTrue([[NSString dk_pluralizePerson:-1] isEqualToString:@"error"], @"");
     XCTAssertTrue([[NSString dk_pluralizePerson:0] isEqualToString:@"no one"], @"");
+        
+    XCTAssertTrue(![[@"www.github.com" dk_truncateToWidth:40 withFont:[UIFont systemFontOfSize:10]] dk_containsString:@"hub"], @"");
 }
 
 @end

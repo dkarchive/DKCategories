@@ -37,6 +37,9 @@
         NSString *link = @"www.github.com/dkhamsing";
         NSLog(@"dk_containsString: Is %@ a valid URL? %@", link, [link dk_containsString:@"http"] ? @"Yes" : @"No");
         
+        CGFloat width = 40;
+        NSLog(@"dk_truncateToWidth: %@ truncated to %.0fpx = %@", link, width, [link dk_truncateToWidth:width withFont:[UIFont systemFontOfSize:10]]);
+        
         // UIView
         UIColor *color1 = [UIColor purpleColor];
         UIColor *color2 = [UIColor orangeColor];

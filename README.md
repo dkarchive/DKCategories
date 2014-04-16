@@ -21,8 +21,8 @@ DKCategories includes a suite of unit tests in the DemoTests folder. You can exe
 
 # Say Hi
 - [github.com/dkhamsing](https://github.com/dkhamsing)
-- [twitter.com/alldonegoodbye](https://twitter.com/alldonegoodbye)
-- [contact](http://alldonegoodbye.tumblr.com/ask)
+- [twitter.com/dkhamsing](https://twitter.com/dkhamsing)
+- [contact](http://dkhamsing.tumblr.com/ask)
 
 # License
 DKCategories is available under the MIT license. See the LICENSE file for more info.
