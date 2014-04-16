@@ -16,6 +16,7 @@
 		19316998189438A0004147D0 /* UIView+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = 19316997189438A0004147D0 /* UIView+DK.m */; };
 		1931699A18943926004147D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1931699918943926004147D0 /* QuartzCore.framework */; };
 		1931699B18947B7B004147D0 /* NSString+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1931699418943426004147D0 /* NSString+DK.m */; };
+		1955D86518FE1C7C00D105FE /* UIViewController+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1955D86418FE1C7C00D105FE /* UIViewController+DK.m */; };
 		19FFC2CB18943205000FBC09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FFC2CA18943205000FBC09 /* Foundation.framework */; };
 		19FFC2CD18943205000FBC09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FFC2CC18943205000FBC09 /* CoreGraphics.framework */; };
 		19FFC2CF18943205000FBC09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FFC2CE18943205000FBC09 /* UIKit.framework */; };
@@ -51,6 +52,8 @@
 		19316996189438A0004147D0 /* UIView+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DK.h"; sourceTree = "<group>"; };
 		19316997189438A0004147D0 /* UIView+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DK.m"; sourceTree = "<group>"; };
 		1931699918943926004147D0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1955D86318FE1C7C00D105FE /* UIViewController+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DK.h"; sourceTree = "<group>"; };
+		1955D86418FE1C7C00D105FE /* UIViewController+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DK.m"; sourceTree = "<group>"; };
 		19FFC2C718943205000FBC09 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FFC2CA18943205000FBC09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19FFC2CC18943205000FBC09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -181,6 +184,8 @@
 				1931699418943426004147D0 /* NSString+DK.m */,
 				19316996189438A0004147D0 /* UIView+DK.h */,
 				19316997189438A0004147D0 /* UIView+DK.m */,
+				1955D86318FE1C7C00D105FE /* UIViewController+DK.h */,
+				1955D86418FE1C7C00D105FE /* UIViewController+DK.m */,
 			);
 			name = DKCategories;
 			path = ../DKCategories;
@@ -284,6 +289,7 @@
 				19193ACB1894B73300FB1158 /* NSNumber+DK.m in Sources */,
 				19FFC2FF1894324D000FBC09 /* DKDemoViewController.m in Sources */,
 				19FFC2D718943205000FBC09 /* main.m in Sources */,
+				1955D86518FE1C7C00D105FE /* UIViewController+DK.m in Sources */,
 				1931699518943426004147D0 /* NSString+DK.m in Sources */,
 				19316998189438A0004147D0 /* UIView+DK.m in Sources */,
 				19FFC2DB18943205000FBC09 /* DKAppDelegate.m in Sources */,
