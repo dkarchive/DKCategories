@@ -14,6 +14,9 @@ DKCategories includes a sample project in the Demo folder, in particular in the 
 
 DKCategories includes a suite of unit tests in the DemoTests folder. You can execute the test suite in Xcode by typing `⌘U` (or from the Xcode menu: Product / Test).
 
+# TODO
+- 64-bit
+
 # Acknowlegement
 - [Mattt Thompson](https://twitter.com/mattt)
 - [Sam Soffes](https://github.com/soffes)
