@@ -69,6 +69,7 @@
         NSLog(@"dk_superviews: The orange square's superviews are %@", [squareView3 dk_superviews]);
         
         // UIViewController
+        NSLog(@"- UIViewController Categories");
         if ([self dk_isSmallScreen])
             NSLog(@"dk_isSmallScreen: The device has a small screen.");
         else
