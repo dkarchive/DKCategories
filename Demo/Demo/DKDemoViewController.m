@@ -10,6 +10,7 @@
 #import "NSNumber+DK.h"
 #import "NSString+DK.h"
 #import "UIView+DK.h"
+#import "UIViewController+DK.h"
 
 @interface DKDemoViewController ()
 
@@ -66,6 +67,12 @@
         NSLog(@"- UIView Categories");
         NSLog(@"dk_left: The black square's x origin is %.2f", squareView2.dk_left);
         NSLog(@"dk_superviews: The orange square's superviews are %@", [squareView3 dk_superviews]);
+        
+        // UIViewController
+        if ([self dk_isSmallScreen])
+            NSLog(@"dk_isSmallScreen: The device has a small screen.");
+        else
+            NSLog(@"dk_isSmallScreen: The device has a large screen.");
     }
     return self;
 }
