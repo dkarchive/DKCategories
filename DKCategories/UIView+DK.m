@@ -32,13 +32,27 @@
     NSAssert(width>0, @"dk_addBottomBorderWithColor width should be positive");
     
     CGRect frame = self.bounds;
-    frame.origin.y = frame.size.height;
+    frame.origin.y = frame.size.height-width;
     frame.size.height = width;
     
     UIView *bborder = [[UIView alloc] initWithFrame:frame];
     bborder.backgroundColor = color;
     [self addSubview:bborder];
 }
+
+
+- (void)dk_addTopBorderWithColor:(UIColor*)color width:(CGFloat)width {
+    NSAssert(width>0, @"dk_TopBottomBorderWithColor width should be positive");
+    
+    CGRect frame = self.bounds;
+    frame.origin.y = 0;
+    frame.size.height = width;
+    
+    UIView *bborder = [[UIView alloc] initWithFrame:frame];
+    bborder.backgroundColor = color;
+    [self addSubview:bborder];
+}
+
 
 - (void)dk_addShadow {
     [self dk_addShadowWithColor:[UIColor blackColor] offset:CGSizeMake(0, 1) radius:2.0f opacity:0.25f];
@@ -57,6 +71,14 @@
 - (void)dk_fadeInWithAlpha:(CGFloat)alpha duration:(CGFloat)duration {
     NSAssert(alpha>0, @"dk_fadeInWithAlpha alpha should be positive");
     self.alpha=0.0f;
+    [UIView animateWithDuration:duration delay:0.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.alpha = alpha;
+    } completion:nil];
+}
+
+
+- (void)dk_fadeOutWithAlpha:(CGFloat)alpha duration:(CGFloat)duration {
+    //self.alpha=1.0f;
     [UIView animateWithDuration:duration delay:0.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.alpha = alpha;
     } completion:nil];
@@ -99,9 +121,9 @@
 }
 
 
-- (void)setDk_top:(CGFloat)y {
+- (void)setDk_top:(CGFloat)yOrigin {
     CGRect frame = self.frame;
-    frame.origin.y = y;
+    frame.origin.y = yOrigin;
     self.frame = frame;
 }
 
@@ -135,9 +157,9 @@
 }
 
 
-- (void)setDk_left:(CGFloat)x {
+- (void)setDk_left:(CGFloat)xOrigin {
     CGRect frame = self.frame;
-    frame.origin.x = x;
+    frame.origin.x = xOrigin;
     self.frame = frame;
 }
 

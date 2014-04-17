@@ -33,6 +33,15 @@
  */
 - (void)dk_addBottomBorderWithColor:(UIColor*)color width:(CGFloat)width;
 
+
+/**
+ Add a border at the top of the receiver with the given `color` and `width`.
+ @param color Color of border
+ @param width Width in pixels of border
+ */
+- (void)dk_addTopBorderWithColor:(UIColor*)color width:(CGFloat)width;
+
+
 /**
  Add a default shadow to receiver.
  */
@@ -49,11 +58,19 @@
 
 
 /**
- Fade in the receiver.
+ Fade in the receiver (sets initial alpha to zero).
  @param alpha alpha
  @param duration How long to animate the view
  */
 - (void)dk_fadeInWithAlpha:(CGFloat)alpha duration:(CGFloat)duration;
+
+
+/**
+ Fade out the receiver.
+ @param alpha alpha
+ @param duration How long to animate the view
+ */
+- (void)dk_fadeOutWithAlpha:(CGFloat)alpha duration:(CGFloat)duration;
 
 
 /**
