@@ -30,6 +30,7 @@
 		19FFC2EE18943205000FBC09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19FFC2EC18943205000FBC09 /* InfoPlist.strings */; };
 		19FFC2F018943205000FBC09 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FFC2EF18943205000FBC09 /* NSStringTests.m */; };
 		19FFC2FF1894324D000FBC09 /* DKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FFC2FE1894324D000FBC09 /* DKDemoViewController.m */; };
+		CE2F9F151901BA0100B84037 /* NSData+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F9F141901BA0100B84037 /* NSData+DK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		19FFC2EF18943205000FBC09 /* NSStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		19FFC2FD1894324D000FBC09 /* DKDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDemoViewController.h; sourceTree = "<group>"; };
 		19FFC2FE1894324D000FBC09 /* DKDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDemoViewController.m; sourceTree = "<group>"; };
+		CE2F9F131901BA0100B84037 /* NSData+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DK.h"; sourceTree = "<group>"; };
+		CE2F9F141901BA0100B84037 /* NSData+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DK.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 		19FFC2F918943228000FBC09 /* DKCategories */ = {
 			isa = PBXGroup;
 			children = (
+				CE2F9F131901BA0100B84037 /* NSData+DK.h */,
+				CE2F9F141901BA0100B84037 /* NSData+DK.m */,
 				19193AC91894B73300FB1158 /* NSNumber+DK.h */,
 				19193ACA1894B73300FB1158 /* NSNumber+DK.m */,
 				1931699318943426004147D0 /* NSString+DK.h */,
@@ -289,6 +294,7 @@
 				19193ACB1894B73300FB1158 /* NSNumber+DK.m in Sources */,
 				19FFC2FF1894324D000FBC09 /* DKDemoViewController.m in Sources */,
 				19FFC2D718943205000FBC09 /* main.m in Sources */,
+				CE2F9F151901BA0100B84037 /* NSData+DK.m in Sources */,
 				1955D86518FE1C7C00D105FE /* UIViewController+DK.m in Sources */,
 				1931699518943426004147D0 /* NSString+DK.m in Sources */,
 				19316998189438A0004147D0 /* UIView+DK.m in Sources */,
