@@ -16,6 +16,8 @@ DKCategories includes a suite of unit tests in the DemoTests folder. You can exe
 
 # TODO
 - 64-bit
+- More tests
+- Add NSData category to demo
 
 # Acknowlegement
 - [Mattt Thompson](https://twitter.com/mattt)
