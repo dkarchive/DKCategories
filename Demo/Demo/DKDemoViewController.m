@@ -7,8 +7,11 @@
 //
 
 #import "DKDemoViewController.h"
+
+// Categories
 #import "NSNumber+DK.h"
 #import "NSString+DK.h"
+#import "UIColor+DK.h"
 #import "UIView+DK.h"
 #import "UIViewController+DK.h"
 
@@ -40,10 +43,11 @@
         CGFloat width = 40;
         NSLog(@"dk_truncateToWidth: %@ truncated to %.0fpx = %@", link, width, [link dk_truncateToWidth:width withFont:[UIFont systemFontOfSize:10]]);
         
+        // UIColor
+        UIColor *color1 = [UIColor dk_facebookColor];
+        UIColor *color2 = [UIColor dk_colorWithHexString:@"#00FF00"];
+
         // UIView
-        UIColor *color1 = [UIColor purpleColor];
-        UIColor *color2 = [UIColor orangeColor];
-        
         UIView *squareView1 = [[UIView alloc] initWithFrame:CGRectMake(30, 30, 50, 50)];
         squareView1.backgroundColor = color1;
         [squareView1 dk_addBorderWithColor:color2 width:2.0f];

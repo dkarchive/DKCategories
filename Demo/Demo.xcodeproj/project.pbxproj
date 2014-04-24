@@ -31,6 +31,7 @@
 		19FFC2F018943205000FBC09 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FFC2EF18943205000FBC09 /* NSStringTests.m */; };
 		19FFC2FF1894324D000FBC09 /* DKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FFC2FE1894324D000FBC09 /* DKDemoViewController.m */; };
 		CE2F9F151901BA0100B84037 /* NSData+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F9F141901BA0100B84037 /* NSData+DK.m */; };
+		CEDDEE9C19097B3400BDADC1 /* UIColor+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDDEE9B19097B3400BDADC1 /* UIColor+DK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		19FFC2FE1894324D000FBC09 /* DKDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDemoViewController.m; sourceTree = "<group>"; };
 		CE2F9F131901BA0100B84037 /* NSData+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DK.h"; sourceTree = "<group>"; };
 		CE2F9F141901BA0100B84037 /* NSData+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DK.m"; sourceTree = "<group>"; };
+		CEDDEE9A19097B3400BDADC1 /* UIColor+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DK.h"; sourceTree = "<group>"; };
+		CEDDEE9B19097B3400BDADC1 /* UIColor+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DK.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 		19FFC2F918943228000FBC09 /* DKCategories */ = {
 			isa = PBXGroup;
 			children = (
+				CEDDEE9A19097B3400BDADC1 /* UIColor+DK.h */,
+				CEDDEE9B19097B3400BDADC1 /* UIColor+DK.m */,
 				CE2F9F131901BA0100B84037 /* NSData+DK.h */,
 				CE2F9F141901BA0100B84037 /* NSData+DK.m */,
 				19193AC91894B73300FB1158 /* NSNumber+DK.h */,
@@ -293,6 +298,7 @@
 			files = (
 				19193ACB1894B73300FB1158 /* NSNumber+DK.m in Sources */,
 				19FFC2FF1894324D000FBC09 /* DKDemoViewController.m in Sources */,
+				CEDDEE9C19097B3400BDADC1 /* UIColor+DK.m in Sources */,
 				19FFC2D718943205000FBC09 /* main.m in Sources */,
 				CE2F9F151901BA0100B84037 /* NSData+DK.m in Sources */,
 				1955D86518FE1C7C00D105FE /* UIViewController+DK.m in Sources */,
