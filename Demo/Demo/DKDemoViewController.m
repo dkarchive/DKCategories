@@ -63,6 +63,8 @@
         [rectangleView dk_centerVertically:squareView3];
         [rectangleView dk_fadeInWithAlpha:0.5f duration:4.0f];
         [rectangleView addSubview:squareView3];
+        
+        [UIView dk_addLineViewToViewController:self yCoordinate:rectangleView.dk_bottom +10 color:[UIColor redColor] lineHeight:1];
 
         // UIViewController
         [self dk_addSubViews: @[squareView1,squareView2,rectangleView] ];

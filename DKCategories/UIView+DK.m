@@ -11,6 +11,18 @@
 
 @implementation UIView (DK)
 
++ (void)dk_addLineViewToViewController:(UIViewController*)controller yCoordinate:(CGFloat)yCoordinate color:(UIColor*)color lineHeight:(CGFloat)lineHeight {
+    NSAssert(lineHeight>0, @"dk_addLineViewToViewController lineHeight should be positive");    
+    CGRect frame = controller.view.bounds;
+    frame.origin.y = yCoordinate;
+    frame.size.height = lineHeight;
+    
+    UIView *separatorView = [[UIView alloc] initWithFrame:frame];
+    separatorView.backgroundColor = color;
+    [controller.view addSubview:separatorView];
+}
+
+
 - (void)dk_addBorder {
     [self dk_addBorderWithColor:[UIColor blackColor] width:1.0f];
 }
@@ -65,6 +77,22 @@
     self.layer.shadowOffset = offset;
     self.layer.shadowRadius = radius;
     self.layer.shadowOpacity = opacity;
+}
+
+
+- (void)dk_centerHorizontally:(UIView*)view {
+    CGRect frame = view.frame;
+    frame.origin.x = (self.frame.size.width - frame.size.width)/2;
+    frame.origin.x = ceilf(frame.origin.x);
+    view.frame = frame;
+}
+
+
+- (void)dk_centerVertically:(UIView*)view {
+    CGRect frame = view.frame;
+    frame.origin.y = (self.frame.size.height - frame.size.height)/2;
+    frame.origin.y = ceilf(frame.origin.y);
+    view.frame = frame;
 }
 
 
@@ -185,22 +213,6 @@
     CGRect frame = self.frame;
     frame.size.height = height;
     self.frame = frame;
-}
-
-
-- (void)dk_centerHorizontally:(UIView*)view {
-    CGRect frame = view.frame;
-    frame.origin.x = (self.frame.size.width - frame.size.width)/2;
-    frame.origin.x = ceilf(frame.origin.x);
-    view.frame = frame;
-}
-
-
-- (void)dk_centerVertically:(UIView*)view {
-    CGRect frame = view.frame;
-    frame.origin.y = (self.frame.size.height - frame.size.height)/2;
-    frame.origin.y = ceilf(frame.origin.y);
-    view.frame = frame;
 }
 
 

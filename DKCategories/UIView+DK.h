@@ -10,9 +10,20 @@
 @interface UIView (DK)
 
 /**
+ Add a separator view (usually a line).
+ @param controller Receiver to add separator to.
+ @param yOrigin Y-coordinate of the separator.
+ @param color Color of the separator
+ @param borderSize Size of the separator.
+ */
++ (void)dk_addLineViewToViewController:(UIViewController*)controller yCoordinate:(CGFloat)yCoordinate color:(UIColor*)color lineHeight:(CGFloat)lineHeight;
+
+
+/**
  Add a 1 pixel black border to the receiver.
  */
 - (void)dk_addBorder;
+
 
 /**
  Add a border of given `color` and `width` to the receiver.
@@ -21,10 +32,12 @@
  */
 - (void)dk_addBorderWithColor:(UIColor*)color width:(CGFloat)width;
 
+
 /**
  Add a 1 pixel black border at the bottom of the receiver.
  */
 - (void)dk_addBottomBorder;
+
 
 /**
  Add a border at the bottom of the receiver with the given `color` and `width`.
@@ -47,6 +60,7 @@
  */
 - (void)dk_addShadow ;
 
+
 /**
  Add a shadow to the receiver for the given `color`, `offset`, `radius` and `opacity`.
  @param color Shadow color
@@ -55,6 +69,18 @@
  @param opacity Shadow opacity value
  */
 - (void)dk_addShadowWithColor:(UIColor*)color offset:(CGSize)offset radius:(CGFloat)radius opacity:(CGFloat)opacity;
+
+
+/**
+ Center a view horizontally on the receiver.
+ */
+- (void)dk_centerHorizontally:(UIView*)view;
+
+
+/**
+ Center a view vertically on the receiver. 
+ */
+- (void)dk_centerVertically:(UIView*)view;
 
 
 /**
@@ -93,18 +119,15 @@
 
 
 #pragma mark - Frame
+
 // Credit: https://github.com/yackle
 
 @property (nonatomic) CGFloat dk_top;
 @property (nonatomic) CGFloat dk_bottom;
 @property (nonatomic) CGFloat dk_right;
 @property (nonatomic) CGFloat dk_left;
-
 @property (nonatomic) CGFloat dk_width;
 @property (nonatomic) CGFloat dk_height;
-
-- (void)dk_centerHorizontally:(UIView*)view;
-- (void)dk_centerVertically:(UIView*)view;
 
 
 @end
