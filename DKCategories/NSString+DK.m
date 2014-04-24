@@ -35,17 +35,16 @@
     if (numberOfPeople<0)
         return @"error";
     
-    return [NSString stringWithFormat:@"%d people", numberOfPeople ];
+    return [NSString stringWithFormat:@"%ld people", (long)numberOfPeople ];
 }
 
 
 - (NSString*)dk_truncateToWidth:(CGFloat)width withFont:(UIFont*)font {
-    int min = 0, max = self.length, mid;
+    NSInteger min = 0, max = self.length, mid;
     while (min < max) {
         mid = (min+max)/2;
         NSString *currentString = [self substringWithRange:NSMakeRange(0, mid)];
-        CGSize currentSize = [currentString sizeWithFont:font];
-        
+        CGSize currentSize = [currentString sizeWithAttributes: @{NSFontAttributeName:font} ];        
         if (currentSize.width < width){
             min = mid + 1;
         }
@@ -57,7 +56,7 @@
             break;
         }
     }
-    
+
     NSString *retVal = [self substringWithRange:NSMakeRange(0, min)];
     if (min<self.length) {
         retVal = [retVal stringByAppendingString:@"…"];
