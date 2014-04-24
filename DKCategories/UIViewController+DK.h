@@ -17,4 +17,22 @@
 - (BOOL)dk_isSmallScreen;
 
 
+#pragma mark - Child View Controller
+
+//  See https://developer.apple.com/library/ios/featuredarticles/ViewControllerPGforiPhoneOS/CreatingCustomContainerViewControllers/CreatingCustomContainerViewControllers.html#//apple_ref/doc/uid/TP40007457-CH18-SW6 for more information.
+
+/**
+ Adds child view controller to receiver.
+ @param childController Child view controller.
+ */
+- (void)dk_addChildController:(UIViewController*)childController;
+
+
+/**
+ Removes child view controller from receiver.
+ @param childController Child view controller.
+ */
+- (void)dk_removeChildController:(UIViewController*)childController;
+
+
 @end

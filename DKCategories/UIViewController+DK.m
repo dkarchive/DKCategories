@@ -19,4 +19,21 @@
 }
 
 
+#pragma mark - Child View Controller
+
+- (void)dk_addChildController:(UIViewController*)childController {
+    [self addChildViewController:childController];
+    [childController didMoveToParentViewController:self];
+    childController.view.frame = self.view.bounds;
+    [self.view addSubview:childController.view];
+}
+
+
+- (void)dk_removeChildController:(UIViewController*)childController{
+    [childController willMoveToParentViewController:nil];
+    [childController.view removeFromSuperview];
+    [childController removeFromParentViewController];
+}
+
+
 @end
