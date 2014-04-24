@@ -11,6 +11,13 @@
 @interface UIViewController (DK)
 
 /**
+ Add list of views to receiver.
+ @param subViews List of views.
+ */
+- (void)dk_addSubViews:(NSArray *)subViews;
+
+
+/**
  Returns YES if the device has a small screen (iPhone 4s and older, checks for the 960-by-640 resolution). 
  @return Boolean that specifies if the screen is small.
  */

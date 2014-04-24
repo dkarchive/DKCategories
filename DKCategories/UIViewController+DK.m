@@ -10,6 +10,13 @@
 
 @implementation UIViewController (DK)
 
+- (void)dk_addSubViews:(NSArray *)subViews {
+    [subViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [self.view addSubview:obj];
+    }];
+}
+
+
 - (BOOL)dk_isSmallScreen {
     if (self.view.frame.size.height==480) {
         return YES;
