@@ -56,6 +56,15 @@
 
 
 /**
+ Add list of views as subviews to a view.
+ @param subViews List of views.
+ @param view View to add subviews to.
+ @param
+ */
++ (void)dk_addSubviews:(NSArray*)subviews onView:(UIView*)view;
+
+
+/**
  Add a default shadow to receiver.
  */
 - (void)dk_addShadow ;

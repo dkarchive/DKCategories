@@ -66,6 +66,13 @@
 }
 
 
++ (void)dk_addSubviews:(NSArray*)subviews onView:(UIView*)view {
+    [subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [view addSubview:obj];
+    }];
+}
+
+
 - (void)dk_addShadow {
     [self dk_addShadowWithColor:[UIColor blackColor] offset:CGSizeMake(0, 1) radius:2.0f opacity:0.25f];
 }
