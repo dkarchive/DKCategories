@@ -10,8 +10,8 @@
 
 @implementation UIViewController (DK)
 
-- (void)dk_addSubViews:(NSArray *)subViews {
-    [subViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+- (void)dk_addSubviews:(NSArray *)subviews {
+    [subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         [self.view addSubview:obj];
     }];
 }

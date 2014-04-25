@@ -1,4 +1,4 @@
-//
+ //
 //  UIViewController+DK.h
 //  DealSpotr
 //
@@ -11,10 +11,10 @@
 @interface UIViewController (DK)
 
 /**
- Add list of views to receiver.
+ Add list of views as subviews to the receiver's view.
  @param subViews List of views.
  */
-- (void)dk_addSubViews:(NSArray *)subViews;
+- (void)dk_addSubviews:(NSArray *)subviews;
 
 
 /**
