@@ -70,8 +70,10 @@
         
         [UIView dk_addLineViewToViewController:self yCoordinate:rectangleView.dk_bottom +10 color:[UIColor redColor] lineHeight:1];
 
+        [UIView dk_addSubviews:@[rectangleView] onView:self.view];
+        
         // UIViewController
-        [self dk_addSubViews: @[squareView1,squareView2,rectangleView] ];
+        [self dk_addSubviews: @[squareView1,squareView2] ];
         
         NSLog(@"- UIView Categories");
         NSLog(@"dk_left: The black square's x origin is %.2f", squareView2.dk_left);
