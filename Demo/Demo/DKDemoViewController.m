@@ -85,6 +85,8 @@
             NSLog(@"dk_isSmallScreen: The device has a small screen.");
         else
             NSLog(@"dk_isSmallScreen: The device has a large screen.");
+        
+        //TODO: add demo for dk_adjustHeightForSmallScreen:
     }
     return self;
 }
