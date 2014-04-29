@@ -30,4 +30,4 @@ DKCategories includes a suite of unit tests in the DemoTests folder. You can exe
 - [contact](http://dkhamsing.tumblr.com/ask)
 
 # License
-DKCategories is available under the MIT license. See the LICENSE file for more info.
+DKCategories is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
