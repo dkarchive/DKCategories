@@ -127,6 +127,12 @@
 - (id)dk_firstSuperviewOfClass:(Class)superviewClass;
 
 
+/**
+ Make the receiver into a circle.
+ */
+- (void)dk_styleCircle;
+
+
 #pragma mark - Frame
 
 // Credit: https://github.com/yackle

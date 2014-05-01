@@ -149,6 +149,12 @@
 }
 
 
+- (void)dk_styleCircle {
+    self.layer.cornerRadius = self.bounds.size.height/2;
+    self.clipsToBounds = YES;
+}
+
+
 #pragma mark - Frame
 
 - (CGFloat)dk_top {
