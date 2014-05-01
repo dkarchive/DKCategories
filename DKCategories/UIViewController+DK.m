@@ -8,12 +8,22 @@
 
 #import "UIViewController+DK.h"
 
+CGFloat dk_smallScreenOffset = 88.0f;
+
+
 @implementation UIViewController (DK)
 
 - (void)dk_addSubviews:(NSArray *)subviews {
     [subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         [self.view addSubview:obj];
     }];
+}
+
+
+- (void)dk_adjustHeightForSmallScreen:(CGFloat)height {
+    if ([self dk_isSmallScreen]) {
+        height = height-88;
+    }
 }
 
 

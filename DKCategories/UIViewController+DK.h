@@ -17,6 +17,10 @@
 - (void)dk_addSubviews:(NSArray *)subviews;
 
 
+
+- (void)dk_adjustHeightForSmallScreen:(CGFloat)height;
+
+
 /**
  Returns YES if the device has a small screen (iPhone 4s and older, checks for the 960-by-640 resolution). 
  @return Boolean that specifies if the screen is small.
