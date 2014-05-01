@@ -61,12 +61,13 @@
         rectangleView.backgroundColor = color1;
         [rectangleView dk_addShadow];
         
-        UIView *squareView3 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-        squareView3.backgroundColor = color2;
-        [rectangleView dk_centerHorizontally:squareView3];
-        [rectangleView dk_centerVertically:squareView3];
+        UIView *circleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        [circleView dk_styleCircle];
+        circleView.backgroundColor = color2;
+        [rectangleView dk_centerHorizontally:circleView];
+        [rectangleView dk_centerVertically:circleView];
         [rectangleView dk_fadeInWithAlpha:0.5f duration:4.0f];
-        [rectangleView addSubview:squareView3];
+        [rectangleView addSubview:circleView];
         
         [UIView dk_addLineViewToViewController:self yCoordinate:rectangleView.dk_bottom +10 color:[UIColor redColor] lineHeight:1];
 
@@ -77,7 +78,7 @@
         
         NSLog(@"- UIView Categories");
         NSLog(@"dk_left: The black square's x origin is %.2f", squareView2.dk_left);
-        NSLog(@"dk_superviews: The orange square's superviews are %@", [squareView3 dk_superviews]);
+        NSLog(@"dk_superviews: The orange square's superviews are %@", [circleView dk_superviews]);
         
         // UIViewController continued
         NSLog(@"- UIViewController Categories");
