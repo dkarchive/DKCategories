@@ -55,7 +55,7 @@
         CGFloat inset = 20;
         UIView *squareView2 = [[UIView alloc] initWithFrame:CGRectMake(squareView1.dk_right + inset, 30, 50, 50)];
         squareView2.backgroundColor = [UIColor blackColor];
-        [squareView2 dk_addBottomBorderWithColor:color2 width:2.0f];
+        [squareView2 dk_debug]; // Add a 1 pixel red border
         
         UIView *rectangleView = [[UIView alloc] initWithFrame:CGRectMake(squareView2.dk_right + inset, 30, 100, 50)];
         rectangleView.backgroundColor = color1;

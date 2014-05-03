@@ -103,6 +103,11 @@
 }
 
 
+- (void)dk_debug {
+    [self dk_addBorderWithColor:[UIColor redColor] width:1];
+}
+
+
 - (void)dk_fadeInWithAlpha:(CGFloat)alpha duration:(CGFloat)duration {
     NSAssert(alpha>0, @"dk_fadeInWithAlpha alpha should be positive");
     self.alpha=0.0f;

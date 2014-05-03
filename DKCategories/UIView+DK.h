@@ -93,6 +93,13 @@
 
 
 /**
+ Add a 1 pixel red border to the receiver.
+ Credits: @irace 
+ */
+- (void)dk_debug;
+
+
+/**
  Fade in the receiver (sets initial alpha to zero).
  @param alpha alpha
  @param duration How long to animate the view
