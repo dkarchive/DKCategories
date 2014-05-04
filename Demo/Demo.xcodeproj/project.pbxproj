@@ -12,6 +12,8 @@
 		19193ACD1894E07800FB1158 /* UIView+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = 19316997189438A0004147D0 /* UIView+DK.m */; };
 		19193ACF1894E24100FB1158 /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19193ACE1894E24100FB1158 /* UIViewTests.m */; };
 		19193AD11894E31400FB1158 /* NSNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19193AD01894E31400FB1158 /* NSNumberTests.m */; };
+		192ACAA919160CE9004CCDE1 /* UIImage+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = 192ACAA819160CE9004CCDE1 /* UIImage+DK.m */; };
+		192ACAAB19160EF0004CCDE1 /* action@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 192ACAAA19160EF0004CCDE1 /* action@2x.png */; };
 		1931699518943426004147D0 /* NSString+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1931699418943426004147D0 /* NSString+DK.m */; };
 		19316998189438A0004147D0 /* UIView+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = 19316997189438A0004147D0 /* UIView+DK.m */; };
 		1931699A18943926004147D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1931699918943926004147D0 /* QuartzCore.framework */; };
@@ -49,6 +51,9 @@
 		19193ACA1894B73300FB1158 /* NSNumber+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+DK.m"; sourceTree = "<group>"; };
 		19193ACE1894E24100FB1158 /* UIViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewTests.m; sourceTree = "<group>"; };
 		19193AD01894E31400FB1158 /* NSNumberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNumberTests.m; sourceTree = "<group>"; };
+		192ACAA719160CE9004CCDE1 /* UIImage+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DK.h"; sourceTree = "<group>"; };
+		192ACAA819160CE9004CCDE1 /* UIImage+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DK.m"; sourceTree = "<group>"; };
+		192ACAAA19160EF0004CCDE1 /* action@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action@2x.png"; sourceTree = "<group>"; };
 		1931699318943426004147D0 /* NSString+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DK.h"; sourceTree = "<group>"; };
 		1931699418943426004147D0 /* NSString+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DK.m"; sourceTree = "<group>"; };
 		19316996189438A0004147D0 /* UIView+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DK.h"; sourceTree = "<group>"; };
@@ -140,6 +145,7 @@
 		19FFC2D018943205000FBC09 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				192ACAAA19160EF0004CCDE1 /* action@2x.png */,
 				19FFC2D918943205000FBC09 /* DKAppDelegate.h */,
 				19FFC2DA18943205000FBC09 /* DKAppDelegate.m */,
 				19FFC2FD1894324D000FBC09 /* DKDemoViewController.h */,
@@ -184,14 +190,16 @@
 		19FFC2F918943228000FBC09 /* DKCategories */ = {
 			isa = PBXGroup;
 			children = (
-				CEDDEE9A19097B3400BDADC1 /* UIColor+DK.h */,
-				CEDDEE9B19097B3400BDADC1 /* UIColor+DK.m */,
 				CE2F9F131901BA0100B84037 /* NSData+DK.h */,
 				CE2F9F141901BA0100B84037 /* NSData+DK.m */,
 				19193AC91894B73300FB1158 /* NSNumber+DK.h */,
 				19193ACA1894B73300FB1158 /* NSNumber+DK.m */,
 				1931699318943426004147D0 /* NSString+DK.h */,
 				1931699418943426004147D0 /* NSString+DK.m */,
+				CEDDEE9A19097B3400BDADC1 /* UIColor+DK.h */,
+				CEDDEE9B19097B3400BDADC1 /* UIColor+DK.m */,
+				192ACAA719160CE9004CCDE1 /* UIImage+DK.h */,
+				192ACAA819160CE9004CCDE1 /* UIImage+DK.m */,
 				19316996189438A0004147D0 /* UIView+DK.h */,
 				19316997189438A0004147D0 /* UIView+DK.m */,
 				1955D86318FE1C7C00D105FE /* UIViewController+DK.h */,
@@ -277,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19FFC2D518943205000FBC09 /* InfoPlist.strings in Resources */,
+				192ACAAB19160EF0004CCDE1 /* action@2x.png in Resources */,
 				19FFC2DD18943205000FBC09 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +309,7 @@
 				19FFC2FF1894324D000FBC09 /* DKDemoViewController.m in Sources */,
 				CEDDEE9C19097B3400BDADC1 /* UIColor+DK.m in Sources */,
 				19FFC2D718943205000FBC09 /* main.m in Sources */,
+				192ACAA919160CE9004CCDE1 /* UIImage+DK.m in Sources */,
 				CE2F9F151901BA0100B84037 /* NSData+DK.m in Sources */,
 				1955D86518FE1C7C00D105FE /* UIViewController+DK.m in Sources */,
 				1931699518943426004147D0 /* NSString+DK.m in Sources */,

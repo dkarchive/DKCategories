@@ -12,6 +12,7 @@
 #import "NSNumber+DK.h"
 #import "NSString+DK.h"
 #import "UIColor+DK.h"
+#import "UIImage+DK.h"
 #import "UIView+DK.h"
 #import "UIViewController+DK.h"
 
@@ -88,6 +89,16 @@
             NSLog(@"dk_isSmallScreen: The device has a large screen.");
         
         //TODO: add demo for dk_adjustHeightForSmallScreen:
+        
+        // UIImage
+        UIImage *actionImage = [UIImage dk_maskedImageNamed:@"action" color:color1];
+        CGRect frame;
+        frame.origin.x = 10;
+        frame.origin.y = rectangleView.dk_bottom +20;
+        frame.size = actionImage.size;
+        UIImageView *actionImageView = [[UIImageView alloc] initWithFrame:frame];
+        actionImageView.image = actionImage;
+        [self.view addSubview:actionImageView];        
     }
     return self;
 }
