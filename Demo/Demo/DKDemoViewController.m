@@ -12,6 +12,7 @@
 #import "NSNumber+DK.h"
 #import "NSString+DK.h"
 #import "UIColor+DK.h"
+#import "UIImage+DK.h"
 #import "UIView+DK.h"
 #import "UIViewController+DK.h"
 
@@ -55,18 +56,19 @@
         CGFloat inset = 20;
         UIView *squareView2 = [[UIView alloc] initWithFrame:CGRectMake(squareView1.dk_right + inset, 30, 50, 50)];
         squareView2.backgroundColor = [UIColor blackColor];
-        [squareView2 dk_addBottomBorderWithColor:color2 width:2.0f];
+        [squareView2 dk_debug]; // Add a 1 pixel red border
         
         UIView *rectangleView = [[UIView alloc] initWithFrame:CGRectMake(squareView2.dk_right + inset, 30, 100, 50)];
         rectangleView.backgroundColor = color1;
         [rectangleView dk_addShadow];
         
-        UIView *squareView3 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-        squareView3.backgroundColor = color2;
-        [rectangleView dk_centerHorizontally:squareView3];
-        [rectangleView dk_centerVertically:squareView3];
+        UIView *circleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        [circleView dk_styleCircle];
+        circleView.backgroundColor = color2;
+        [rectangleView dk_centerHorizontally:circleView];
+        [rectangleView dk_centerVertically:circleView];
         [rectangleView dk_fadeInWithAlpha:0.5f duration:4.0f];
-        [rectangleView addSubview:squareView3];
+        [rectangleView addSubview:circleView];
         
         [UIView dk_addLineViewToViewController:self yCoordinate:rectangleView.dk_bottom +10 color:[UIColor redColor] lineHeight:1];
 
@@ -77,7 +79,7 @@
         
         NSLog(@"- UIView Categories");
         NSLog(@"dk_left: The black square's x origin is %.2f", squareView2.dk_left);
-        NSLog(@"dk_superviews: The orange square's superviews are %@", [squareView3 dk_superviews]);
+        NSLog(@"dk_superviews: The orange square's superviews are %@", [circleView dk_superviews]);
         
         // UIViewController continued
         NSLog(@"- UIViewController Categories");
@@ -87,6 +89,16 @@
             NSLog(@"dk_isSmallScreen: The device has a large screen.");
         
         //TODO: add demo for dk_adjustHeightForSmallScreen:
+        
+        // UIImage
+        UIImage *actionImage = [UIImage dk_maskedImageNamed:@"action" color:color1];
+        CGRect frame;
+        frame.origin.x = 10;
+        frame.origin.y = rectangleView.dk_bottom +20;
+        frame.size = actionImage.size;
+        UIImageView *actionImageView = [[UIImageView alloc] initWithFrame:frame];
+        actionImageView.image = actionImage;
+        [self.view addSubview:actionImageView];        
     }
     return self;
 }
