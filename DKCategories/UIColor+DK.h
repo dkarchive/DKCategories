@@ -16,6 +16,12 @@
 + (UIColor*)dk_facebookColor;
 
 
+/**
+ Get the UITextFiled placeholder color.
+ */
++ (UIColor*)dk_placeholderColor;
+
+
 #pragma mark - Helpers
 
 /**

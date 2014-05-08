@@ -15,6 +15,11 @@
 }
 
 
++ (UIColor*)dk_placeholderColor {
+    return [UIColor colorWithRed:199/255.0f green:199/255.0f blue:205/255.0f alpha:1.0f];
+}
+
+
 #pragma mark - Helpers
 
 + (UIColor*)dk_colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {
