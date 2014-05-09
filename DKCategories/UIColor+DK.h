@@ -25,6 +25,13 @@
 #pragma mark - Helpers
 
 /**
+ Update color to use in navigation bar (iOS 7 adjusts for transparency)
+ Credits: https://github.com/kgn/UIColorCategories/tree/master/UIColorCategories
+ */
+- (UIColor *)dk_colorForTranslucency;
+
+
+/**
  Get a color with RGB.
  @param red Red.
  @param blue Blue.
