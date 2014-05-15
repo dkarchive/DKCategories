@@ -160,6 +160,18 @@
 }
 
 
+- (UIViewController *)dk_viewController {
+    UIResponder *responder = self;
+    while (![responder isKindOfClass:[UIViewController class]]) {
+        responder = [responder nextResponder];
+        if (nil == responder) {
+            break;
+        }
+    }
+    return (UIViewController *)responder;
+}
+
+
 #pragma mark - Frame
 
 - (CGFloat)dk_top {

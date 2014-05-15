@@ -140,6 +140,13 @@
 - (void)dk_styleCircle;
 
 
+/**
+ Get the view controller for the receiver.
+ */
+// TODO: example in demo
+- (UIViewController *)dk_viewController;
+
+
 #pragma mark - Frame
 
 // Credit: https://github.com/yackle
