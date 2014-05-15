@@ -35,7 +35,7 @@
         NSLog(@"- NSString Categories");
         
         NSInteger number = 3;
-        NSLog(@"dk_pluralize: I saved %ld %@", number, [@"item" dk_pluralize:number]);
+        NSLog(@"dk_pluralize: I saved %zd %@", number, [@"item" dk_pluralize:number]);
         NSLog(@"dk_pluralizePeople: Saved by %@", [NSString dk_pluralizePerson:number]);
         
         NSString *link = @"www.github.com/dkhamsing";
