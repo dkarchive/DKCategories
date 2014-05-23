@@ -14,6 +14,16 @@
 }
 
 
+- (NSString *)dk_domainForStringURL {
+    NSString *domain = self;
+    domain = [domain stringByReplacingOccurrencesOfString:@"www." withString:@""];
+    domain = [domain substringFromIndex:[domain rangeOfString:@"://"].location+3];
+    domain = [domain substringToIndex:[domain rangeOfString:@"/"].location];
+    
+    return domain;
+}
+
+
 - (NSString *)dk_pluralize:(NSInteger)number {
     if (number==1)
         return self;
@@ -44,7 +54,10 @@
     while (min < max) {
         mid = (min+max)/2;
         NSString *currentString = [self substringWithRange:NSMakeRange(0, mid)];
-        CGSize currentSize = [currentString sizeWithAttributes: @{NSFontAttributeName:font} ];        
+        CGSize currentSize =
+        [currentString sizeWithAttributes:@{NSFontAttributeName:font}];
+        //[currentString sizeWithFont:font];
+        
         if (currentSize.width < width){
             min = mid + 1;
         }
@@ -56,7 +69,7 @@
             break;
         }
     }
-
+    
     NSString *retVal = [self substringWithRange:NSMakeRange(0, min)];
     if (min<self.length) {
         retVal = [retVal stringByAppendingString:@"…"];

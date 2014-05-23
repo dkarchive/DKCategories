@@ -35,14 +35,16 @@
         NSLog(@"- NSString Categories");
         
         NSInteger number = 3;
-        NSLog(@"dk_pluralize: I saved %zd %@", number, [@"item" dk_pluralize:number]);
+        NSLog(@"dk_pluralize: I saved %@ %@", @(number), [@"item" dk_pluralize:number]);
         NSLog(@"dk_pluralizePeople: Saved by %@", [NSString dk_pluralizePerson:number]);
         
-        NSString *link = @"www.github.com/dkhamsing";
+        NSString *link = @"http://www.github.com/dkhamsing";
         NSLog(@"dk_containsString: Is %@ a valid URL? %@", link, [link dk_containsString:@"http"] ? @"Yes" : @"No");
         
         CGFloat width = 40;
         NSLog(@"dk_truncateToWidth: %@ truncated to %.0fpx = %@", link, width, [link dk_truncateToWidth:width withFont:[UIFont systemFontOfSize:10]]);
+        
+        NSLog(@"dk_domainForStringURL: The domain for %@ is %@", link, [link dk_domainForStringURL]);
         
         // UIColor
         UIColor *color1 = [UIColor dk_facebookColor];
