@@ -18,6 +18,14 @@
 - (BOOL)dk_containsString:(NSString *)string;
 
 
+/*
+ Returns the document path for a given filename.
+ Credit: http://stackoverflow.com/questions/6821517/save-an-image-to-application-documents-folder-from-uiview-on-ios
+ @param filename Name of the file
+ */
++ (NSString*)dk_documentPathForFilename:(NSString*)filename;
+
+
 /**
  Returns the domain (i.e. domain.com) for a String URL.
  */

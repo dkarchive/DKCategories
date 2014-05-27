@@ -14,6 +14,15 @@
 }
 
 
++ (NSString*)dk_documentPathForFilename:(NSString*)filename {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0];
+    NSString *filePath = [documentsPath stringByAppendingFormat:@"/%@",filename];
+    
+    return filePath;
+}
+
+
 - (NSString *)dk_domainForStringURL {
     NSString *domain = self;
     domain = [domain stringByReplacingOccurrencesOfString:@"www." withString:@""];

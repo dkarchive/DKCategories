@@ -34,6 +34,8 @@
         // NSString
         NSLog(@"- NSString Categories");
         
+        NSLog(@"dk_documentPathForFilename: %@", [NSString dk_documentPathForFilename:@"test.plist"]);
+        
         NSInteger number = 3;
         NSLog(@"dk_pluralize: I saved %@ %@", @(number), [@"item" dk_pluralize:number]);
         NSLog(@"dk_pluralizePeople: Saved by %@", [NSString dk_pluralizePerson:number]);
