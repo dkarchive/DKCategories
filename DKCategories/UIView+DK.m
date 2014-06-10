@@ -160,6 +160,11 @@
 }
 
 
+- (void)dk_styleRoundedCorner:(CGFloat)cornerRadius {
+    self.layer.cornerRadius = cornerRadius;
+}
+
+
 - (UIViewController *)dk_viewController {
     UIResponder *responder = self;
     while (![responder isKindOfClass:[UIViewController class]]) {

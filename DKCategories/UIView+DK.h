@@ -141,6 +141,12 @@
 
 
 /**
+ Sets corner radius for the receiver.
+ */
+- (void)dk_styleRoundedCorner:(CGFloat)cornerRadius;
+
+
+/**
  Get the view controller for the receiver.
  */
 // TODO: example in demo

@@ -63,6 +63,7 @@
         [squareView2 dk_debug]; // Add a 1 pixel red border
         
         UIView *rectangleView = [[UIView alloc] initWithFrame:CGRectMake(squareView2.dk_right + inset, 30, 100, 50)];
+        [rectangleView dk_styleRoundedCorner:4];
         rectangleView.backgroundColor = color1;
         [rectangleView dk_addShadow];
         
