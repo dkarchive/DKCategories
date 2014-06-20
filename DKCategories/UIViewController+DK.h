@@ -17,8 +17,10 @@
 - (void)dk_addSubviews:(NSArray *)subviews;
 
 
-
-- (void)dk_adjustHeightForSmallScreen:(CGFloat)height;
+/**
+ Get height offset for small screen (iPhone).
+ */
+- (CGFloat)dk_adjustHeightForSmallScreen:(CGFloat)height;
 
 
 /**

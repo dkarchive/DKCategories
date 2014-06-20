@@ -20,10 +20,12 @@ CGFloat dk_smallScreenOffset = 88.0f;
 }
 
 
-- (void)dk_adjustHeightForSmallScreen:(CGFloat)height {
+- (CGFloat)dk_adjustHeightForSmallScreen:(CGFloat)height {
     if ([self dk_isSmallScreen]) {
-        height = height-88;
+        height = height-88;        
     }
+    
+    return height;
 }
 
 
