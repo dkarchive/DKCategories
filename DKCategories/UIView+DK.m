@@ -162,6 +162,7 @@
 
 - (void)dk_styleRoundedCorner:(CGFloat)cornerRadius {
     self.layer.cornerRadius = cornerRadius;
+    self.clipsToBounds = YES;
 }
 
 
