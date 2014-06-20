@@ -95,4 +95,15 @@
 }
 
 
+- (NSString*)dk_urlEncodeString:(NSString *)unencodedString {
+    return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(
+                                                                                 NULL,
+                                                                                 (CFStringRef)unencodedString,
+                                                                                 NULL,
+                                                                                 (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                                                                 kCFStringEncodingUTF8 ));
+}
+
+
+
 @end

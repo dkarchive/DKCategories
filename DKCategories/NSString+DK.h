@@ -29,7 +29,7 @@
 /**
  Returns the domain (i.e. domain.com) for a String URL.
  */
-- (NSString *)dk_domainForStringURL;
+- (NSString*)dk_domainForStringURL;
 
 
 /**
@@ -37,7 +37,7 @@
  @param number Number to pluralize string with
  @return The string with or without "s" added
  */
-- (NSString *)dk_pluralize:(NSInteger)number;
+- (NSString*)dk_pluralize:(NSInteger)number;
 
 
 /**
@@ -55,6 +55,14 @@
  @param font Font to use in computing width
  */
 - (NSString*)dk_truncateToWidth:(CGFloat)width withFont:(UIFont*)font;
+
+
+/**
+ URL encode string.
+ Credit: http://stackoverflow.com/questions/8088473/url-encode-an-nsstring
+ @param: unecodedString String to encode
+ */
+- (NSString*)dk_urlEncodeString:(NSString*)unencodedString;
 
 
 @end
