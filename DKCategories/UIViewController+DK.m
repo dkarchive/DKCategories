@@ -20,13 +20,14 @@ CGFloat dk_smallScreenOffset = 88.0f;
 }
 
 
+/*
 - (CGFloat)dk_adjustHeightForSmallScreen:(CGFloat)height {
     if ([self dk_isSmallScreen]) {
         height = height-88;        
     }
     
     return height;
-}
+}*/
 
 
 - (BOOL)dk_isSmallScreen {

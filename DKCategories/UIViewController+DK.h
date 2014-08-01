@@ -19,8 +19,9 @@
 
 /**
  Get height offset for small screen (iPhone).
- */
+
 - (CGFloat)dk_adjustHeightForSmallScreen:(CGFloat)height;
+ */
 
 
 /**
