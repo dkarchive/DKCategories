@@ -9,6 +9,7 @@
 #import "DKDemoViewController.h"
 
 // Categories
+#import "NSData+DK.h"
 #import "NSNumber+DK.h"
 #import "NSString+DK.h"
 #import "UIColor+DK.h"
@@ -26,6 +27,12 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        // NSData
+        NSLog(@"- NSData Categories");
+        
+        [NSData dk_cookiesSave];
+        [NSData dk_cookiesLoadWithLog:YES];
+        
         // NSNumber
         NSLog(@"- NSNumber Categories");
         
