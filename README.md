@@ -5,7 +5,6 @@ Useful Objective-C Categories
 
 # Installation
 - Simply add the files in the DKCategories folder to your project.
-- `UIView+DK` requires the `QuartzCore` framework.
 
 # Demo
 DKCategories includes a sample project in the Demo folder, in particular in the file `DKDemoViewController.m`.
@@ -13,11 +12,6 @@ DKCategories includes a sample project in the Demo folder, in particular in the 
 # Unit Tests
 
 DKCategories includes a suite of unit tests in the DemoTests folder. You can execute the test suite in Xcode by typing `⌘U` (or from the Xcode menu: Product / Test).
-
-# TODO
-- 64-bit
-- More tests
-- Add NSData category to demo
 
 # Acknowlegement
 - [Mattt Thompson](https://twitter.com/mattt)
