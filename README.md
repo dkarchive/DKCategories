@@ -4,7 +4,7 @@ DKCategories
 Useful Objective-C Categories
 
 # Installation
-- Simply add the files in the DKCategories folder to your project.
+Simply add the files in the DKCategories folder to your project.
 
 # Demo
 DKCategories includes a sample project in the Demo folder, in particular in the file `DKDemoViewController.m`.
