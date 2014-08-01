@@ -10,9 +10,17 @@
 
 /**
  Load session cookies.
+ @param log Boolean that outputs with NSLog.
  Credits: http://stackoverflow.com/questions/14387662/afnetworking-persisting-cookies-automatically
  */
++ (void)dk_cookiesLoadWithLog:(BOOL)log;
+
+
+/**
+ Load session cookies without logging.
+ */
 + (void)dk_cookiesLoad;
+
 
 /**
  Save session cookies.
@@ -20,5 +28,6 @@
  */
 
 + (void)dk_cookiesSave;
+
 
 @end
