@@ -11,10 +11,10 @@
 @implementation NSNumber (DK)
 
 - (NSString*)dk_stringWithDecimal {
-    NSInteger number = ceilf(self.floatValue);
+    NSInteger dk_number = ceilf(self.floatValue);
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init] ;
     [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
-    NSString *retVal = [numberFormatter stringFromNumber: [NSNumber numberWithInteger:number] ];
+    NSString *retVal = [numberFormatter stringFromNumber: [NSNumber numberWithInteger:dk_number] ];
     return retVal;
 }
 

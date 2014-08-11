@@ -37,7 +37,7 @@
  @param number Number to pluralize string with
  @return The string with or without "s" added
  */
-- (NSString*)dk_pluralize:(NSInteger)number;
+- (NSString*)dk_pluralize:(NSInteger)dk_number;
 
 
 /**

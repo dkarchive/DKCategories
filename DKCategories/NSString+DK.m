@@ -41,11 +41,11 @@
 }
 
 
-- (NSString *)dk_pluralize:(NSInteger)number {
-    if (number==1)
+- (NSString *)dk_pluralize:(NSInteger)dk_number {
+    if (dk_number==1)
         return self;
     
-    if (number<0)
+    if (dk_number<0)
         return @"error";
     
     return [self stringByAppendingString:@"s"];
@@ -103,7 +103,6 @@
                                                                                  (CFStringRef)@"!*'();:@&=+$,/?%#[]",
                                                                                  kCFStringEncodingUTF8 ));
 }
-
 
 
 @end
