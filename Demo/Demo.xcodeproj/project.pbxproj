@@ -33,6 +33,8 @@
 		19FFC2F018943205000FBC09 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FFC2EF18943205000FBC09 /* NSStringTests.m */; };
 		19FFC2FF1894324D000FBC09 /* DKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FFC2FE1894324D000FBC09 /* DKDemoViewController.m */; };
 		CE2F9F151901BA0100B84037 /* NSData+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F9F141901BA0100B84037 /* NSData+DK.m */; };
+		CED8F4E91AAE330900A91A97 /* UIColor+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDDEE9B19097B3400BDADC1 /* UIColor+DK.m */; };
+		CED8F4EB1AAE369000A91A97 /* UIColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CED8F4EA1AAE369000A91A97 /* UIColorTests.m */; };
 		CEDDEE9C19097B3400BDADC1 /* UIColor+DK.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDDEE9B19097B3400BDADC1 /* UIColor+DK.m */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,7 @@
 		19FFC2FE1894324D000FBC09 /* DKDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDemoViewController.m; sourceTree = "<group>"; };
 		CE2F9F131901BA0100B84037 /* NSData+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DK.h"; sourceTree = "<group>"; };
 		CE2F9F141901BA0100B84037 /* NSData+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DK.m"; sourceTree = "<group>"; };
+		CED8F4EA1AAE369000A91A97 /* UIColorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorTests.m; sourceTree = "<group>"; };
 		CEDDEE9A19097B3400BDADC1 /* UIColor+DK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DK.h"; sourceTree = "<group>"; };
 		CEDDEE9B19097B3400BDADC1 /* UIColor+DK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DK.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +175,7 @@
 			children = (
 				19193AD01894E31400FB1158 /* NSNumberTests.m */,
 				19FFC2EF18943205000FBC09 /* NSStringTests.m */,
+				CED8F4EA1AAE369000A91A97 /* UIColorTests.m */,
 				19193ACE1894E24100FB1158 /* UIViewTests.m */,
 				19FFC2EA18943205000FBC09 /* Supporting Files */,
 			);
@@ -323,11 +327,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				19193ACC1894E07300FB1158 /* NSNumber+DK.m in Sources */,
+				CED8F4EB1AAE369000A91A97 /* UIColorTests.m in Sources */,
 				19193ACD1894E07800FB1158 /* UIView+DK.m in Sources */,
 				1931699B18947B7B004147D0 /* NSString+DK.m in Sources */,
 				19193AD11894E31400FB1158 /* NSNumberTests.m in Sources */,
 				19FFC2F018943205000FBC09 /* NSStringTests.m in Sources */,
 				19193ACF1894E24100FB1158 /* UIViewTests.m in Sources */,
+				CED8F4E91AAE330900A91A97 /* UIColor+DK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
