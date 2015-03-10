@@ -7,7 +7,7 @@ Useful Objective-C Categories
 Simply add the files in the DKCategories folder to your project.
 
 # Demo
-DKCategories includes a sample project in the Demo folder, in particular in the file `DKDemoViewController.m`.
+DKCategories includes a sample project in the Demo folder. 
 
 # Unit Tests
 
@@ -18,10 +18,10 @@ DKCategories includes a suite of unit tests in the DemoTests folder. You can exe
 - [Sam Soffes](https://github.com/soffes)
 - [Sho Yakushiji](https://github.com/yackle)
 
-# Say Hi
+# Contact
 - [github.com/dkhamsing](https://github.com/dkhamsing)
 - [twitter.com/dkhamsing](https://twitter.com/dkhamsing)
-- [contact](http://dkhamsing.tumblr.com/ask)
+- [Send a message](http://dkhamsing.tumblr.com/ask)
 
 # License
 DKCategories is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
