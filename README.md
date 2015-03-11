@@ -3,6 +3,8 @@ DKCategories
 
 Useful Objective-C Categories
 
+[![Build Status](https://travis-ci.org/dkhamsing/DKCategories.svg?branch=master)](https://travis-ci.org/dkhamsing/DKCategories)
+
 # Installation
 Simply add the files in the DKCategories folder to your project.
 
