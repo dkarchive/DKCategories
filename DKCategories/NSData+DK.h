@@ -6,12 +6,13 @@
 
 #import <Foundation/Foundation.h>
 
+/* Category for NSData. */
 @interface NSData (DK)
 
 /**
  Load session cookies.
+ Credit: http://stackoverflow.com/questions/14387662/afnetworking-persisting-cookies-automatically
  @param log Boolean that outputs with NSLog.
- Credits: http://stackoverflow.com/questions/14387662/afnetworking-persisting-cookies-automatically
  */
 + (void)dk_cookiesLoadWithLog:(BOOL)log;
 
@@ -24,7 +25,7 @@
 
 /**
  Save session cookies.
- Credits: http://stackoverflow.com/questions/14387662/afnetworking-persisting-cookies-automatically
+ Credit: http://stackoverflow.com/questions/14387662/afnetworking-persisting-cookies-automatically
  */
 
 + (void)dk_cookiesSave;

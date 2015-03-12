@@ -1,8 +1,7 @@
 //
-//  NsNumber+DK.m
+//  NSNumber+DK.m
 //
 //  Created by dkhamsing on 1/25/14.
-//
 //
 
 #import "NSNumber+DK.h"

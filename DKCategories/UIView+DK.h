@@ -3,10 +3,10 @@
 //
 //  Created by dkhamsing on 1/25/14.
 //
-//
 
 #import <UIKit/UIKit.h>
 
+/* Category for UIView. */
 @interface UIView (DK)
 
 /**
@@ -94,7 +94,7 @@
 
 /**
  Add a 1 pixel red border to the receiver.
- Credits: @irace 
+ Credit: @irace
  */
 - (void)dk_debug;
 

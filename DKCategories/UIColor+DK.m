@@ -1,9 +1,7 @@
 //
 //  UIColor+DK.m
-//  DealSpotr
 //
-//  Created by Daniel on 4/24/14.
-//  Copyright (c) 2014 ZipfWorks. All rights reserved.
+//  Created by dkhamsing on 4/24/14.
 //
 
 #import "UIColor+DK.h"

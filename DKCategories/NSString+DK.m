@@ -3,11 +3,10 @@
 //
 //  Created by dkhamsing on 1/25/14.
 //
-//
 
 #import "NSString+DK.h"
 
-@implementation NSString (SS)
+@implementation NSString (DK)
 
 - (BOOL)dk_containsString:(NSString *)string {
     return !NSEqualRanges([self rangeOfString:string], NSMakeRange(NSNotFound, 0));

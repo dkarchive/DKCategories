@@ -1,10 +1,10 @@
 //
-//  NsNumber+DK.h
+//  NSNumber+DK.h
 //
 //  Created by dkhamsing on 1/25/14.
 //
-//
 
+/* Category for NSNumber. */
 #import <Foundation/Foundation.h>
 
 @interface NSNumber (DK)

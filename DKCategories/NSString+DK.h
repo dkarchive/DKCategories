@@ -3,11 +3,11 @@
 //
 //  Created by dkhamsing on 1/25/14.
 //
-//
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (SS)
+/* Category for NSString. */
+@interface NSString (DK)
 
 /**
  Returns a Boolean if the receiver contains the given `string`.

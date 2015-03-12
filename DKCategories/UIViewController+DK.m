@@ -1,9 +1,7 @@
 //
 //  UIViewController+DK.m
-//  DealSpotr
 //
 //  Created by Daniel on 4/15/14.
-//  Copyright (c) 2014 ZipfWorks. All rights reserved.
 //
 
 #import "UIViewController+DK.h"

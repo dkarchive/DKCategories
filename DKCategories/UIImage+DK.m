@@ -1,9 +1,7 @@
 //
 //  UIImage+DK.m
-//  Demo
 //
-//  Created by Daniel on 5/3/14.
-//
+//  Created by dkhamsing on 5/3/14.
 //
 
 #import "UIImage+DK.h"

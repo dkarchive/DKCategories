@@ -1,13 +1,12 @@
- //
-//  UIViewController+DK.h
-//  DealSpotr
 //
-//  Created by Daniel on 4/15/14.
-//  Copyright (c) 2014 ZipfWorks. All rights reserved.
+//  UIViewController+DK.h
+//
+//  Created by dkhamsing on 4/15/14.
 //
 
 #import <UIKit/UIKit.h>
 
+/* Category for UIController. */
 @interface UIViewController (DK)
 
 /**
@@ -15,13 +14,6 @@
  @param subViews List of views.
  */
 - (void)dk_addSubviews:(NSArray *)subviews;
-
-
-/**
- Get height offset for small screen (iPhone).
-
-- (CGFloat)dk_adjustHeightForSmallScreen:(CGFloat)height;
- */
 
 
 /**
