@@ -10,9 +10,9 @@
 @interface NSNumber (DK)
 
 /**
- Display number with decimal separator.
- @return String with decimal separator (large number)
+ Display (large) number with decimal separator.
+ @return String with decimal separator.
  */
-- (NSString*)dk_stringWithDecimal;
+- (NSString *)dk_stringWithDecimal;
 
 @end
