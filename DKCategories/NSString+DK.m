@@ -13,7 +13,7 @@
 }
 
 
-+ (NSString*)dk_documentPathForFilename:(NSString*)filename {
++ (NSString *)dk_documentPathForFilename:(NSString*)filename {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
     NSString *documentsPath = [paths objectAtIndex:0];
     NSString *filePath = [documentsPath stringByAppendingFormat:@"/%@",filename];
@@ -65,7 +65,7 @@
 }
 
 
-- (NSString*)dk_truncateToWidth:(CGFloat)width withFont:(UIFont*)font {
+- (NSString *)dk_truncateToWidth:(CGFloat)width withFont:(UIFont*)font {
     NSInteger min = 0, max = self.length, mid;
     while (min < max) {
         mid = (min+max)/2;
@@ -94,7 +94,7 @@
 }
 
 
-- (NSString*)dk_urlEncodeString:(NSString *)unencodedString {
+- (NSString *)dk_urlEncodeString:(NSString *)unencodedString {
     return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(
                                                                                  NULL,
                                                                                  (CFStringRef)unencodedString,

@@ -9,7 +9,7 @@
 
 @implementation NSNumber (DK)
 
-- (NSString*)dk_stringWithDecimal {
+- (NSString *)dk_stringWithDecimal {
     NSInteger dk_number = ceilf(self.floatValue);
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init] ;
     [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
