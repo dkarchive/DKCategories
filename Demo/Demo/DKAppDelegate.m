@@ -13,12 +13,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[DKDemoViewController alloc] init]];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    [self.window setRootViewController:[[DKDemoViewController alloc] init]];
+    self.window.rootViewController = navigationController;
     
     return YES;
 }
