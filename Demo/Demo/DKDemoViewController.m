@@ -118,4 +118,15 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    UIColor *myBrandColorExample = [UIColor purpleColor];
+    self.view.backgroundColor = myBrandColorExample;
+    
+    // If we use myBrandColorExample in the navigation bar, it needs to be adjusted because it will appear lighter
+    UIColor *adjustedColorForTranslucency = [myBrandColorExample dk_colorForTranslucency];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:adjustedColorForTranslucency}]; // It's a subtle change, but use myBrandColorExample here instead to see the difference
+}
+
 @end
