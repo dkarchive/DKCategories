@@ -27,6 +27,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        self.title = @"DKCategories";
+        
         // NSData
         [self demoLogTitle:@"NSData"];
         
@@ -71,16 +73,18 @@
         // UIView
         [self demoLogTitle:@"UIView"];
         
-        UIView *squareView1 = [[UIView alloc] initWithFrame:CGRectMake(30, 30, 50, 50)];
+        CGFloat top = 80;
+        UIView *squareView1 = [[UIView alloc] initWithFrame:CGRectMake(30, top, 50, 50)];
+        
         squareView1.backgroundColor = color1;
         [squareView1 dk_addBorderWithColor:color2 width:2.0f];
         
         CGFloat inset = 20;
-        UIView *squareView2 = [[UIView alloc] initWithFrame:CGRectMake(squareView1.dk_right + inset, 30, 50, 50)];
+        UIView *squareView2 = [[UIView alloc] initWithFrame:CGRectMake(squareView1.dk_right + inset, top, 50, 50)];
         squareView2.backgroundColor = [UIColor blackColor];
         [squareView2 dk_debug]; // Add a 1 pixel red border
         
-        UIView *rectangleView = [[UIView alloc] initWithFrame:CGRectMake(squareView2.dk_right + inset, 30, 100, 50)];
+        UIView *rectangleView = [[UIView alloc] initWithFrame:CGRectMake(squareView2.dk_right + inset, top, 100, 50)];
         [rectangleView dk_styleRoundedCorner:4];
         rectangleView.backgroundColor = color1;
         [rectangleView dk_addShadow];
@@ -125,6 +129,19 @@
     }
     return self;
 }
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    UIColor *myBrandColorExample = [UIColor purpleColor];
+    self.view.backgroundColor = myBrandColorExample;
+    
+    // If we use myBrandColorExample in the navigation bar, it needs to be adjusted because it will appear lighter
+    UIColor *adjustedColorForTranslucency = [myBrandColorExample dk_colorForTranslucency];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:adjustedColorForTranslucency}]; // It's a subtle change, but use myBrandColorExample here instead to see the difference
+}
+
 
 #pragma mark - Private
 

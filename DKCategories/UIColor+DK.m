@@ -20,7 +20,7 @@
 
 #pragma mark - Helpers
 
-- (UIColor *)dk_colorForTranslucency{
+- (UIColor *)dk_colorForTranslucency {
     CGFloat hue = 0, saturation = 0, brightness = 0, alpha = 0;
     [self getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
     return [UIColor colorWithHue:hue saturation:saturation*1.158 brightness:brightness*0.95 alpha:alpha];
