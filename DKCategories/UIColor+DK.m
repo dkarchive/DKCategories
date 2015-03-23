@@ -8,12 +8,12 @@
 
 @implementation UIColor (DK)
 
-+ (UIColor*)dk_facebookColor {
++ (UIColor *)dk_facebookColor {
     return [UIColor dk_colorWithHexString:@"#3b5998"];
 }
 
 
-+ (UIColor*)dk_placeholderColor {
++ (UIColor *)dk_placeholderColor {
     return [UIColor colorWithRed:199/255.0f green:199/255.0f blue:205/255.0f alpha:1.0f];
 }
 
@@ -27,7 +27,7 @@
 }
 
 
-+ (UIColor*)dk_colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {
++ (UIColor *)dk_colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {
     return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1.0f];
 }
 

@@ -12,13 +12,13 @@
 /**
  Get the Facebook color.
  */
-+ (UIColor*)dk_facebookColor;
++ (UIColor *)dk_facebookColor;
 
 
 /**
  Get the UITextFiled placeholder color.
  */
-+ (UIColor*)dk_placeholderColor;
++ (UIColor *)dk_placeholderColor;
 
 
 #pragma mark - Helpers
@@ -36,7 +36,7 @@
  @param blue Blue.
  @param green Green.
  */
-+ (UIColor*)dk_colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
++ (UIColor *)dk_colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
 
 
 /**

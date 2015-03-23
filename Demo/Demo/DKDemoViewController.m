@@ -30,40 +30,52 @@
         self.title = @"DKCategories";
         
         // NSData
-        NSLog(@"- NSData Categories");
+        [self demoLogTitle:@"NSData"];
         
         [NSData dk_cookiesSave];
         [NSData dk_cookiesLoadWithLog:YES];
         
         // NSNumber
-        NSLog(@"- NSNumber Categories");
+        [self demoLogTitle:@"NSNumber"];
         
-        NSLog(@"dk_stringWithDecimal: %@", [@3000 dk_stringWithDecimal]);
+        {
+            NSNumber *number = @3000;
+            NSLog(@"dk_stringWithDecimal for %@: %@", number, [number dk_stringWithDecimal]);
+        }
         
         // NSString
-        NSLog(@"- NSString Categories");
+        [self demoLogTitle:@"NSString"];
         
         NSLog(@"dk_documentPathForFilename: %@", [NSString dk_documentPathForFilename:@"test.plist"]);
         
-        NSInteger number = 3;
-        NSLog(@"dk_pluralize: I saved %@ %@", @(number), [@"item" dk_pluralize:number]);
-        NSLog(@"dk_pluralizePeople: Saved by %@", [NSString dk_pluralizePerson:number]);
+        {
+            NSInteger number = 3;
+            NSLog(@"dk_pluralize: I saved %@ %@", @(number), [@"item" dk_pluralize:number]);
+            NSLog(@"dk_pluralizePeople: Saved by %@", [NSString dk_pluralizePerson:number]);
+        }
         
-        NSString *link = @"http://www.github.com/dkhamsing";
-        NSLog(@"dk_containsString: Is %@ a valid URL? %@", link, [link dk_containsString:@"http"] ? @"Yes" : @"No");
-        
-        CGFloat width = 40;
-        NSLog(@"dk_truncateToWidth: %@ truncated to %.0fpx = %@", link, width, [link dk_truncateToWidth:width withFont:[UIFont systemFontOfSize:10]]);
-        
-        NSLog(@"dk_domainForStringURL: The domain for %@ is %@", link, [link dk_domainForStringURL]);
+        {
+            NSString *link = @"http://www.github.com/dkhamsing";
+            NSLog(@"dk_containsString: Is %@ a valid URL? %@", link, [link dk_containsString:@"http"] ? @"Yes" : @"No");
+            
+            {
+                CGFloat width = 40;
+                NSLog(@"dk_truncateToWidth: %@ truncated to %.0fpx = %@", link, width, [link dk_truncateToWidth:width withFont:[UIFont systemFontOfSize:10]]);
+            }
+            
+            NSLog(@"dk_domainForStringURL: The domain for %@ is %@", link, [link dk_domainForStringURL]);
+        }
         
         // UIColor
         UIColor *color1 = [UIColor dk_facebookColor];
         UIColor *color2 = [UIColor dk_colorWithHexString:@"#00FF00"];
         
         // UIView
+        [self demoLogTitle:@"UIView"];
+        
         CGFloat top = 80;
         UIView *squareView1 = [[UIView alloc] initWithFrame:CGRectMake(30, top, 50, 50)];
+        
         squareView1.backgroundColor = color1;
         [squareView1 dk_addBorderWithColor:color2 width:2.0f];
         
@@ -86,24 +98,24 @@
         [rectangleView addSubview:circleView];
         
         [UIView dk_addLineViewToViewController:self yCoordinate:rectangleView.dk_bottom +10 color:[UIColor redColor] lineHeight:1];
-
+        
         [UIView dk_addSubviews:@[rectangleView] onView:self.view];
         
         // UIViewController
-        [self dk_addSubviews: @[squareView1,squareView2] ];
+        [self dk_addSubviews: @[squareView1,squareView2]];
         
-        NSLog(@"- UIView Categories");
+        NSLog(@"dk_viewController for the first square: %@", [squareView1 dk_viewController]);
         NSLog(@"dk_left: The black square's x origin is %.2f", squareView2.dk_left);
-        NSLog(@"dk_superviews: The orange square's superviews are %@", [circleView dk_superviews]);
+        NSLog(@"dk_superviews: The circle's superviews are %@", [circleView dk_superviews]);
         
         // UIViewController continued
-        NSLog(@"- UIViewController Categories");
-        if ([self dk_isSmallScreen])
+        [self demoLogTitle:@"UIViewController"];
+        if ([self dk_isSmallScreen]) {
             NSLog(@"dk_isSmallScreen: The device has a small screen.");
-        else
+        }
+        else {
             NSLog(@"dk_isSmallScreen: The device has a large screen.");
-        
-        //TODO: add demo for dk_adjustHeightForSmallScreen:
+        }
         
         // UIImage
         UIImage *actionImage = [UIImage dk_maskedImageNamed:@"action" color:color1];
@@ -113,10 +125,11 @@
         frame.size = actionImage.size;
         UIImageView *actionImageView = [[UIImageView alloc] initWithFrame:frame];
         actionImageView.image = actionImage;
-        [self.view addSubview:actionImageView];        
+        [self.view addSubview:actionImageView];
     }
     return self;
 }
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -127,6 +140,13 @@
     // If we use myBrandColorExample in the navigation bar, it needs to be adjusted because it will appear lighter
     UIColor *adjustedColorForTranslucency = [myBrandColorExample dk_colorForTranslucency];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:adjustedColorForTranslucency}]; // It's a subtle change, but use myBrandColorExample here instead to see the difference
+}
+
+
+#pragma mark - Private
+
+- (void)demoLogTitle:(NSString *)title {
+    NSLog(@"\n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> %@ Categories", title);
 }
 
 @end
