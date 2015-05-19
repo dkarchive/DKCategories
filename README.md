@@ -9,6 +9,14 @@ Useful Objective-C Categories
 [![Platform](https://img.shields.io/cocoapods/p/DKCategories.svg?style=flat)](http://cocoadocs.org/docsets/DKCategories)
 
 # Installation
+
+## [CocoaPods](https://cocoapods.org/)
+``` ruby
+pod `DKCategories`
+```
+
+## Manual
+
 Simply add the files in the DKCategories folder to your project.
 
 # Demo
