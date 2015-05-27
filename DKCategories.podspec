@@ -1,7 +1,7 @@
 Pod::Spec.new do |s| 
   s.name         = 'DKCategories'
 
-  s.version      = '0.1'
+  s.version      = '0.2'
 
   s.summary      = 'Useful Objective-C Categories'
 
