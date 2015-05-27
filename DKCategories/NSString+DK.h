@@ -4,7 +4,7 @@
 //  Created by dkhamsing on 1/25/14.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /* Category for NSString. */
 @interface NSString (DK)
